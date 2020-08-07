@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main() {
+    string str;
+    cout<<"enter a string";
+    cin>>str;
+    int i;
+    int l=str.length();
+    for(i=0;i<l;i++){
+        if(str[i]+5>'z'){
+            str[i]=str[i]+4-'z'+'a';
+        }
+        else
+        str[i]+=5;
+    }
+    cout<<str;
+}
